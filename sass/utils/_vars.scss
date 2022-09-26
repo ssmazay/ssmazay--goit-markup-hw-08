@@ -1,0 +1,27 @@
+:root {
+  /* Fonts */
+
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Text colors */
+
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+  --link-txt-cl: #2196f3;
+  --white-txt-cl: #ffffff;
+
+  /* Backgroung colors */
+
+  --main-bg-cl: #ffffff;
+  --hero-bg-cl: #2f303a;
+  --secondary-bg-cl: #f5f4fa;
+}
+
+/* Others */
+
+.page {
+  font-family: var(--main-font);
+  background-color: var(--main-bg-cl);
+  color: var(--main-txt-cl);
+}
