@@ -1,10 +1,10 @@
 .section-features {
   // @include section($pt 94px, $pb 94px, $bgc);
 
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 480px)
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -15,11 +15,10 @@
 .features__list {
   // @include list($jc: null, $ai: null, $d: flex, $gap: 30px);
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+  // @media screen and (min-width: 480px)
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -40,15 +39,14 @@
 }
 
 .features__icon {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    width: 450px;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-bg-cl);
-    margin-bottom: 30px;
-  }
+  // @media screen and (min-width: 480px)
+  display: flex;
+  width: 450px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg-cl);
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -67,7 +65,14 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
+
 .features__text {
   color: var(--secondary-txt-cl);
   font-weight: 400;

@@ -1,12 +1,10 @@
 @charset "UTF-8";
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.container {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -546,11 +544,12 @@ img {
   background-color: #188ce8;
 }
 
-@media screen and (min-width: 480px) {
-  .section-features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section-features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media screen and (min-width: 1200px) {
   .section-features {
@@ -559,17 +558,15 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-  }
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -600,22 +597,20 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 450px;
-    height: 120px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: var(--secondary-bg-cl);
-    margin-bottom: 30px;
-  }
+.features__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  height: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--secondary-bg-cl);
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__icon {
@@ -640,6 +635,17 @@ img {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .features__subtitles {
+    display: block;
+  }
 }
 
 .features__text {
