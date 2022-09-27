@@ -1,23 +1,64 @@
 .section-features {
   // @include section($pt 94px, $pb 94px, $bgc);
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features__list {
   // @include list($jc: null, $ai: null, $d: flex, $gap: 30px);
-  display: flex;
-  gap: 30px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.features__item {
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
 
 .features__icon {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-bg-cl);
-  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-cl);
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 270px;
+  }
 }
 
 .features__subtitles {
