@@ -1,8 +1,7 @@
 .section-customers {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -11,14 +10,12 @@
 }
 
 .customers__title {
-  @media screen and (min-width: 480px) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: calc(33 / 28);
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-  }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
@@ -28,32 +25,27 @@
 }
 
 .customers__list {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
+  // @include list(center, center);
 
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
-  }
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .customers__item {
-  @media screen and (min-width: 480px) {
-    width: 210px;
-    height: 92px;
-  }
+  // @include item(5, 30px, 6);
+  flex-basis: calc((100% - 30px) / 2);
+  height: 92px;
+  // width: 210px;
 
   @media screen and (min-width: 768px) {
-    width: 226px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 
   @media screen and (min-width: 1200px) {
-    width: 170px;
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
-
 .customers__link {
   display: flex;
   width: 100%;
