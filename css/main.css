@@ -434,16 +434,26 @@ img {
 
 .hero-title {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  height: 120px;
+  max-width: 360px;
+}
+@media screen and (max-width: 479px) {
+  .hero-title {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .hero-btn {
