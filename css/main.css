@@ -91,28 +91,59 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer {
     text-align: center;
   }
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.footer-container__adress {
-  margin: auto;
+@media screen and (max-width: 1199px) {
+  .footer-container__adress {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container__adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container__adress {
+    text-align: left;
+    margin-right: 93px;
+  }
 }
 
-.footer-adress {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer-adress {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    margin-right: 70px;
+  }
 }
 
 .footer-adress__content {
@@ -157,10 +188,6 @@ img {
 }
 
 /* footer-socials */
-.footer-socials {
-  margin-right: auto;
-}
-
 .footer-socials__name {
   font-weight: 700;
   font-size: 14px;
@@ -214,10 +241,6 @@ img {
   fill: var(--main-bg-cl);
 }
 
-.footer-form {
-  margin-top: 60px;
-}
-
 .footer-form__name {
   font-weight: 700;
   font-size: 14px;
@@ -232,12 +255,21 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .footer-form__sign {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer-form__label {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    margin-right: 12px;
+  }
 }
 
 .footer-form__mail {
