@@ -326,12 +326,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 480px;
-  padding: 10px 15px;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 10px 15px;
+  }
 }
 
 .logo {
@@ -1544,6 +1548,8 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
