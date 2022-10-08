@@ -9,10 +9,10 @@
 @mixin item($q-gap, $gap, $q-item) {
   flex-basis: calc((100% - #{$q-gap} * #{$gap}) / #{$q-item});
 }
-@mixin section($pt, $pb, $bgc) {
+@mixin section($pt, $pb) {
   padding-top: $pt;
   padding-bottom: $pb;
-  background-color: $bgc;
+  // background-color: $bgc;
 }
 @mixin flex($d, $jc, $ai) {
   display: $d;
