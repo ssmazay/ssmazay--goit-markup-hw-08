@@ -118,6 +118,10 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+  }
 }
 
 .chbox-link {

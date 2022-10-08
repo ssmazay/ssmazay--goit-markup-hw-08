@@ -4,13 +4,24 @@
 }
 
 .project__list {
-  display: flex;
-  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .project__item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  max-width: 450px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .project__link {
@@ -54,6 +65,14 @@
   letter-spacing: 0.03em;
   color: var(--white-txt-cl);
   padding: 63px 24px;
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 450px;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   flex-basis: calc((100% - 30px) / 2);
+  // }
 }
 
 .project__cards-name {

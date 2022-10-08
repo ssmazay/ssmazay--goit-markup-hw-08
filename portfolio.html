@@ -24,6 +24,7 @@
     <header class="header">
         <div class="container header-container">
             <a class="logo" lang="en" href="./index.html"><span class="accent">Web</span>Studio</a>
+
             <nav class="nav">
                 <ul class="nav__list list">
                     <li class="nav__item">
@@ -53,6 +54,12 @@
                     </li>
                 </ul>
             </div>
+
+            <button type:="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -78,12 +85,35 @@
                         <button class="projects-btn__filters-btn" type="button">Маркетинг</button>
                     </li>
                 </ul>
+
                 <ul class="project__list list">
                     <li class="project__item">
                         <a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img1.jpeg" alt="Розкритий ноутбук"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                      ./images/portfolio/img1_l-@1x.jpg 1x,
+                                      ./images/portfolio/img1_l-@2x.jpg 2x
+                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                      ./images/portfolio/img1_m-@1x.jpg 1x,
+                                      ./images/portfolio/img1_m-@2x.jpg 2x
+                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                      ./images/portfolio/img1_s-@1x.jpg 1x,
+                                      ./images/portfolio/img1_s-@2x.jpg 2x
+                                    " />
+                                    <img class="project__img" src="./images/portfolio/img1_s-@1x.jpg"
+                                        alt="Розкритий ноутбук" width="450" height="294" loading="lazy" />
+                                </picture>
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -100,8 +130,29 @@
                     <li class="project__item">
                         <a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img2.jpeg" alt="Грають в баскетбол"
-                                    width="370" />
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                      ./images/portfolio/img2_l-@1x.jpg 1x,
+                                      ./images/portfolio/img2_l-@2x.jpg 2x
+                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                      ./images/portfolio/img2_m-@1x.jpg 1x,
+                                      ./images/portfolio/img2_m-@2x.jpg 2x
+                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                      ./images/portfolio/img2_s-@1x.jpg 1x,
+                                      ./images/portfolio/img2_s-@2x.jpg 2x
+                                    " />
+                                    <img class="project__img" src="./images/portfolio/img2_s-@1x.jpg"
+                                        alt="Грають в баскетбол" width="450" height="294" loading="lazy" />
+                                </picture>
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -119,8 +170,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img3.jpeg" alt="Логотип ресторану"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                      ./images/portfolio/img3_l-@1x.jpg 1x,
+                                                                      ./images/portfolio/img3_l-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                      ./images/portfolio/img3_m-@1x.jpg 1x,
+                                                                      ./images/portfolio/img3_m-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                      ./images/portfolio/img3_s-@1x.jpg 1x,
+                                                                      ./images/portfolio/img3_s-@2x.jpg 2x
+                                                                    " />
+                                    <img class="project__img" src="./images/portfolio/img3_s-@1x.jpg"
+                                        alt="Логотип ресторану" width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -138,8 +212,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img4.jpeg" alt="Навушники"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                      ./images/portfolio/img4_l-@1x.jpg 1x,
+                                                                      ./images/portfolio/img4_l-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                      ./images/portfolio/img4_m-@1x.jpg 1x,
+                                                                      ./images/portfolio/img4_m-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                      ./images/portfolio/img4_s-@1x.jpg 1x,
+                                                                      ./images/portfolio/img4_s-@2x.jpg 2x
+                                                                    " />
+                                    <img class="project__img" src="./images/portfolio/img4_s-@1x.jpg" alt="Навушники"
+                                        width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -155,8 +252,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img5.jpeg" alt="Дві коробочки"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                      ./images/portfolio/img5_l-@1x.jpg 1x,
+                                      ./images/portfolio/img5_l-@2x.jpg 2x
+                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                      ./images/portfolio/img5_m-@1x.jpg 1x,
+                                      ./images/portfolio/img5_m-@2x.jpg 2x
+                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                      ./images/portfolio/img5_s-@1x.jpg 1x,
+                                      ./images/portfolio/img5_s-@2x.jpg 2x
+                                    " />
+                                    <img class="project__img" src="./images/portfolio/img5_s-@1x.jpg"
+                                        alt="Дві коробочки" width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -172,8 +292,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img6.jpeg" alt="Компьютерний дисплей"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                      ./images/portfolio/img6_l-@1x.jpg 1x,
+                                      ./images/portfolio/img6_l-@2x.jpg 2x
+                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                      ./images/portfolio/img6_m-@1x.jpg 1x,
+                                      ./images/portfolio/img6_m-@2x.jpg 2x
+                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                      ./images/portfolio/img6_s-@1x.jpg 1x,
+                                      ./images/portfolio/img6_s-@2x.jpg 2x
+                                    " />
+                                    <img class="project__img" src="./images/portfolio/img6_s-@1x.jpg"
+                                        alt="Компьютерний дисплей" width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -189,8 +332,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img7.jpeg" alt="Розгорнута книжка"
-                                    width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                      ./images/portfolio/img7_l-@1x.jpg 1x,
+                                                                      ./images/portfolio/img7_l-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                      ./images/portfolio/img7_m-@1x.jpg 1x,
+                                                                      ./images/portfolio/img7_m-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                      ./images/portfolio/img7_s-@1x.jpg 1x,
+                                                                      ./images/portfolio/img7_s-@2x.jpg 2x
+                                                                    " />
+                                    <img class="project__img" src="./images/portfolio/img7_s-@1x.jpg"
+                                        alt="Розгорнута книжка" width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -208,8 +374,31 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img8.jpeg"
-                                    alt="Бирка з назвою проекта" width="370" />
+
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                                                      ./images/portfolio/img8_l-@1x.jpg 1x,
+                                                                      ./images/portfolio/img8_l-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                                                      ./images/portfolio/img8_m-@1x.jpg 1x,
+                                                                      ./images/portfolio/img8_m-@2x.jpg 2x
+                                                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                                                      ./images/portfolio/img8_s-@1x.jpg 1x,
+                                                                      ./images/portfolio/img8_s-@2x.jpg 2x
+                                                                    " />
+                                    <img class="project__img" src="./images/portfolio/img8_s-@1x.jpg"
+                                        alt="Бирка з назвою проекта" width="450" height="294" loading="lazy" />
+                                </picture>
+
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
@@ -225,8 +414,29 @@
                     </li>
                     <li class="project__item"><a href="" class="project__link link">
                             <div class="project__thumb">
-                                <img class="project__img" src="./images/portfolio/img9.jpeg"
-                                    alt="Людина працюе на ноутбуці" width="370" />
+                                <picture>
+                                    <!-- Desktop screen -->
+
+                                    <source media="(min-width: 1200px)" srcset="
+                                     ./images/portfolio/img9_l-@2x.jpg 2x
+                                    ./images/portfolio/img9_l-@1x.jpg 1x,
+                                    " />
+                                    <!-- Tablet screen -->
+
+                                    <source media="(min-width: 768px)" srcset="
+                                      ./images/portfolio/img9_m-@1x.jpg 1x,
+                                      ./images/portfolio/img9_m-@2x.jpg 2x
+                                    " />
+                                    <!-- Mobile screen -->
+
+                                    <source media="(max-width: 767px)" srcset="
+                                      ./images/portfolio/img9_s-@1x.jpg 1x,
+                                      ./images/portfolio/img9_s-@2x.jpg 2x
+                                    " />
+                                    <img class="project__img" src="./images/portfolio/img9_s-@1x.jpg"
+                                        alt="Людина працюе на ноутбуці" width="450" height="294" loading="lazy" />
+                                </picture>
+
                                 <div class="project__overlay">
                                     <p class="project__overlay--desc">Ресурс пропонує комплексні пропозиції з різним
                                         рівнем
