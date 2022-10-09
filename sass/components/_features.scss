@@ -1,7 +1,4 @@
 .section-features {
-  // @include section($pt 94px, $pb 94px, $bgc);
-
-  // @media screen and (min-width: 480px)
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -13,9 +10,6 @@
 }
 
 .features__list {
-  // @include list($jc: null, $ai: null, $d: flex, $gap: 30px);
-
-  // @media screen and (min-width: 480px)
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -34,7 +28,7 @@
 
 .features__item {
   @media screen and (min-width: 768px) {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 

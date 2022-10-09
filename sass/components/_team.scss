@@ -1,11 +1,9 @@
 .section-team {
-  // @include section($pt 60px, $pb 60px, $bgc var(--secondary-bg-cl));
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-cl);
 
   @media screen and (min-width: 1200px) {
-    // @include section($pt 94px, $pb 94px, $bgc var(--secondary-bg-cl));
     padding-top: 94px;
     padding-bottom: 94px;
   }

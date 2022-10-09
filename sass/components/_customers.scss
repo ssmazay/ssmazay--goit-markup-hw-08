@@ -9,6 +9,10 @@
   }
 }
 
+.container-customers {
+  width: 100%;
+}
+
 .customers__title {
   font-weight: 700;
   font-size: 28px;
@@ -25,18 +29,14 @@
 }
 
 .customers__list {
-  // @include list(center, center);
-
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .customers__item {
-  // @include item(5, 30px, 6);
   flex-basis: calc((100% - 30px) / 2);
   height: 92px;
-  // width: 210px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 3);
