@@ -72,6 +72,10 @@
   }
 }
 
+.nav__link.currently {
+  color: var(--link-txt-cl);
+}
+
 .mobile-connect {
   @media screen and (max-width: 767px) {
     margin: inherit;
